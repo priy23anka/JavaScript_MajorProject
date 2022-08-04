@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="jsNumberBaseConverter">
+        <h1>JavaScript Number Base Converter</h1>
+        <label for="inputNumber">Enter Number*</label> <br>
+        <!--for input-->
+        <input type="text" id="inputNumber" placeholder="Your Number"> <br><br>
+           <!--Unicode Decimal Code &#10145 for black right wards arrow-->
+        <label for="fromTo">From &#10145 To*</label> <br>
+        <!--for option-->
+        <select name="fromTo" id="fromTo">
+            <option value="">Select Option</option>
+            <option value="decimal to binary">Decimal To Binary</option>
+            <option value="binary to decimal">Binary To Decimal</option>
+            <option value="decimal to hexadecimal">Decimal To Hexadecimal</option>
+            <option value="hexadecimal to decimal">Hexadecimal To Decimal</option>
+            <option value="binary to hexadecimal">Binary To Hexadecimal</option>
+            <option value="hexadecimal to binary">Hexadecimal To Binary</option>
+        </select>
+        <br> <br> <br>
+        
+        <button id="convertBtn" disabled>Convert</button>
+        <button id="resetBtn" disabled>Reset</button>
+    <br> <br>
+        <p id="answerP">Answer: <span id="showAnswer"></span></p>
+    </section>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--js script-->
+  <script src="./index.js"></script>
+</body>
+</html>
